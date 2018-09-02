@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="161dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="208dp"
+        android:checkedButton="@id/radioButtonGreeter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButtonGreeter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Greeter" />
+
+        <RadioButton
+            android:id="@+id/radioButtonFarewell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Farewell" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBarAge"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="341dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToThirdActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonToThirdActivity"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:text="Next step"
+        android:background="@color/colorAccent"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCurrentAge"
+        android:layout_width="82dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="43dp"
+        android:layout_marginTop="388dp"
+        android:text="18"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToThirdActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+</android.support.constraint.ConstraintLayout>
